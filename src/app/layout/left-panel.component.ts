@@ -5,11 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './left-panel.component.html',
   styleUrls: ['./left-panel.component.scss']
 })
-export class LeftPanelComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+export class LeftPanelComponent {
+  title = "Angular X Seed"
 }

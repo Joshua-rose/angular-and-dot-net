@@ -5,11 +5,6 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './head.component.html',
   styleUrls: ['./head.component.scss']
 })
-export class HeadComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+export class HeadComponent {
+  title = "Angular X Seed"
 }
