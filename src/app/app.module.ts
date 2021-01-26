@@ -11,12 +11,14 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { HeadComponent } from './layout/head/head.component';
 import { LeftPanelComponent } from './layout/left-panel/left-panel.component';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeadComponent,
-    LeftPanelComponent
+    LeftPanelComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
