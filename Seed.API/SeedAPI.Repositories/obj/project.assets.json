@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Joshua\\AmerenDev\\Seed.API\\SeedAPI.Repositories\\SeedAPI.Repositories.csproj",
+      "projectUniqueName": "C:\\Users\\Joshua\\AmerenDev\\ToptalNgDotNet-bitly\\Seed.API\\SeedAPI.Repositories\\SeedAPI.Repositories.csproj",
       "projectName": "SeedAPI.Repositories",
-      "projectPath": "C:\\Users\\Joshua\\AmerenDev\\Seed.API\\SeedAPI.Repositories\\SeedAPI.Repositories.csproj",
+      "projectPath": "C:\\Users\\Joshua\\AmerenDev\\ToptalNgDotNet-bitly\\Seed.API\\SeedAPI.Repositories\\SeedAPI.Repositories.csproj",
       "packagesPath": "C:\\Users\\Joshua\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Joshua\\AmerenDev\\Seed.API\\SeedAPI.Repositories\\obj\\",
+      "outputPath": "C:\\Users\\Joshua\\AmerenDev\\ToptalNgDotNet-bitly\\Seed.API\\SeedAPI.Repositories\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Joshua\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -27,7 +27,8 @@
         "netcoreapp3.1"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {

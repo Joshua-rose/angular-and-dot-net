@@ -29,10 +29,13 @@ namespace SeedAPI.Web.API
                 app.UseDeveloperExceptionPage();
             }
 
-            app.Run(async (context) =>
-            {
-                await context.Response.WriteAsync("Hello World!");
-            });
+            App_Start.DBContextConfig.Initialize(Configuration, env, svp);
+            app.UseCors(builder => builder
+                .AllowAnyOrigin()
+                .AllowAnyMethod()
+                .AllowAnyHeader()
+                .AllowCredentials());
+            app.UseAuthentication();
+            app.UseMvc();
         }
-    }
 }

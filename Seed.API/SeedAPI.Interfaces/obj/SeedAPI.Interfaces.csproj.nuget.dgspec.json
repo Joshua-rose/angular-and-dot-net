@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Joshua\\AmerenDev\\Seed.API\\SeedAPI.Interfaces\\SeedAPI.Interfaces.csproj": {}
+    "C:\\Users\\Joshua\\AmerenDev\\ToptalNgDotNet-bitly\\Seed.API\\SeedAPI.Interfaces\\SeedAPI.Interfaces.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Joshua\\AmerenDev\\Seed.API\\SeedAPI.Interfaces\\SeedAPI.Interfaces.csproj": {
+    "C:\\Users\\Joshua\\AmerenDev\\ToptalNgDotNet-bitly\\Seed.API\\SeedAPI.Interfaces\\SeedAPI.Interfaces.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Joshua\\AmerenDev\\Seed.API\\SeedAPI.Interfaces\\SeedAPI.Interfaces.csproj",
+        "projectUniqueName": "C:\\Users\\Joshua\\AmerenDev\\ToptalNgDotNet-bitly\\Seed.API\\SeedAPI.Interfaces\\SeedAPI.Interfaces.csproj",
         "projectName": "SeedAPI.Interfaces",
-        "projectPath": "C:\\Users\\Joshua\\AmerenDev\\Seed.API\\SeedAPI.Interfaces\\SeedAPI.Interfaces.csproj",
+        "projectPath": "C:\\Users\\Joshua\\AmerenDev\\ToptalNgDotNet-bitly\\Seed.API\\SeedAPI.Interfaces\\SeedAPI.Interfaces.csproj",
         "packagesPath": "C:\\Users\\Joshua\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Joshua\\AmerenDev\\Seed.API\\SeedAPI.Interfaces\\obj\\",
+        "outputPath": "C:\\Users\\Joshua\\AmerenDev\\ToptalNgDotNet-bitly\\Seed.API\\SeedAPI.Interfaces\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Joshua\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -21,7 +21,8 @@
           "netcoreapp3.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {

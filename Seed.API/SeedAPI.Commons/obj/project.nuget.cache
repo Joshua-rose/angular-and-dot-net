@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "R9wh/RmQjPqquV93BfX2iQvm6T/pGGJSFu3TaZkqS4mR5PfaGcsrVD9Nzy4JuidmUL32pPw8gj98c+ymN1GzqA==",
+  "dgSpecHash": "vBUPF9S+wJ8SGooHlsddGsjW7yXxO7RZIgnGZnYi6jnOcAxqoChwh8fHSJmlpi8bolUkNCFG5AbsPl52JTW7Zg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Joshua\\AmerenDev\\Seed.API\\SeedAPI.Commons\\SeedAPI.Commons.csproj",
+  "projectFilePath": "C:\\Users\\Joshua\\AmerenDev\\ToptalNgDotNet-bitly\\Seed.API\\SeedAPI.Commons\\SeedAPI.Commons.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
