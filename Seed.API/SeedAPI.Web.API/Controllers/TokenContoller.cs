@@ -1,5 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 using System;
+using SeedAPI.Maps;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -10,13 +13,13 @@ namespace SeedAPI.Web.API.Controllers
     public class TokenContoller : Controller
     {
         private IConfiguration _config;
-        public TokenController(IConfiguration config)
+        public TokenContoller(IConfiguration config)
         {
-            _config = config
+            _config = config;
         }
         [AllowAnonymous]
-        [HTTPPost]
-        public dynamic Post ([FromBody]LoginViewModel login)
+        [HttpPost]
+        public dynamic Post([FromBody] LoginViewModel login)
         {
             IActionResult response = Unauthorized();
             var user = Authenticate(login);
@@ -37,7 +40,8 @@ namespace SeedAPI.Web.API.Controllers
                 signingCredentials: creds);
             return new JwtSecurityTokenHandler().WriteToken(token);
         }
-        private UserViewModel Authenticate(LoginViewModel login) {
+        private UserViewModel Authenticate(LoginViewModel login)
+        {
             private UserViewModel user = null;
             if (login.username == "pablo" && login.password == "secret")
             {

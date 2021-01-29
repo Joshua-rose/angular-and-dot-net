@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SeedAPI.Interfaces;
+using System;
 
 namespace SeedAPI.ViewModels
 {

@@ -4,6 +4,124 @@
     "C:\\Users\\Joshua\\AmerenDev\\ToptalNgDotNet-bitly\\Seed.API\\SeedAPI.Services\\SeedAPI.Services.csproj": {}
   },
   "projects": {
+    "C:\\Users\\Joshua\\AmerenDev\\ToptalNgDotNet-bitly\\Seed.API\\SeedAPI.Interfaces\\SeedAPI.Interfaces.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Joshua\\AmerenDev\\ToptalNgDotNet-bitly\\Seed.API\\SeedAPI.Interfaces\\SeedAPI.Interfaces.csproj",
+        "projectName": "SeedAPI.Interfaces",
+        "projectPath": "C:\\Users\\Joshua\\AmerenDev\\ToptalNgDotNet-bitly\\Seed.API\\SeedAPI.Interfaces\\SeedAPI.Interfaces.csproj",
+        "packagesPath": "C:\\Users\\Joshua\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Joshua\\AmerenDev\\ToptalNgDotNet-bitly\\Seed.API\\SeedAPI.Interfaces\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Joshua\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Joshua\\AmerenDev\\ToptalNgDotNet-bitly\\Seed.API\\SeedAPI.Models\\SeedAPI.Models.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Joshua\\AmerenDev\\ToptalNgDotNet-bitly\\Seed.API\\SeedAPI.Models\\SeedAPI.Models.csproj",
+        "projectName": "SeedAPI.Models",
+        "projectPath": "C:\\Users\\Joshua\\AmerenDev\\ToptalNgDotNet-bitly\\Seed.API\\SeedAPI.Models\\SeedAPI.Models.csproj",
+        "packagesPath": "C:\\Users\\Joshua\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Joshua\\AmerenDev\\ToptalNgDotNet-bitly\\Seed.API\\SeedAPI.Models\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Joshua\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Users\\Joshua\\AmerenDev\\ToptalNgDotNet-bitly\\Seed.API\\SeedAPI.Services\\SeedAPI.Services.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -27,7 +145,14 @@
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\Joshua\\AmerenDev\\ToptalNgDotNet-bitly\\Seed.API\\SeedAPI.Interfaces\\SeedAPI.Interfaces.csproj": {
+                "projectPath": "C:\\Users\\Joshua\\AmerenDev\\ToptalNgDotNet-bitly\\Seed.API\\SeedAPI.Interfaces\\SeedAPI.Interfaces.csproj"
+              },
+              "C:\\Users\\Joshua\\AmerenDev\\ToptalNgDotNet-bitly\\Seed.API\\SeedAPI.Models\\SeedAPI.Models.csproj": {
+                "projectPath": "C:\\Users\\Joshua\\AmerenDev\\ToptalNgDotNet-bitly\\Seed.API\\SeedAPI.Models\\SeedAPI.Models.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

@@ -1,4 +1,7 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Storage;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -7,13 +10,13 @@ namespace SeedAPI.Models.Content
     class ApplicationContext : IdentityDbContext<User>, IApplicationContext
     {
         private IDbContextTransaction dbContextTransaction;
-        public ApplicationContext(DBContextOptions options) : base(options)
-        {
+        public ApplicationContext(DbContextOptions options) : base(options)
+        { }
             public DbSet<User> UsersDB { get; set; }
 
             public new void SaveChanges()
             {
-            base.saveChanges();
+            base.SaveChanges();
             }
         public new DbSet<T> Set<T>() where T: class
         {
@@ -40,6 +43,6 @@ namespace SeedAPI.Models.Content
                 dbContextTransaction.Dispose();
             }
         }
-        }
+        
     }
 }

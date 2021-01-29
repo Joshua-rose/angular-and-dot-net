@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {}
+    ".NETCoreApp,Version=v3.1": {
+      "SeedAPI.Interfaces/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/SeedAPI.Interfaces.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SeedAPI.Interfaces.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "SeedAPI.Interfaces/1.0.0": {
+      "type": "project",
+      "path": "../SeedAPI.Interfaces/SeedAPI.Interfaces.csproj",
+      "msbuildProject": "../SeedAPI.Interfaces/SeedAPI.Interfaces.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": []
+    ".NETCoreApp,Version=v3.1": [
+      "SeedAPI.Interfaces >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Joshua\\.nuget\\packages\\": {}
@@ -33,7 +52,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Joshua\\AmerenDev\\ToptalNgDotNet-bitly\\Seed.API\\SeedAPI.Interfaces\\SeedAPI.Interfaces.csproj": {
+              "projectPath": "C:\\Users\\Joshua\\AmerenDev\\ToptalNgDotNet-bitly\\Seed.API\\SeedAPI.Interfaces\\SeedAPI.Interfaces.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "dgSpecHash": "6zpy+ADSG+Yqxoq+x0KIWbiIqByCqK6vpU7agKFz6gWwPhR0p3Cu4RiSzG78mem9No6kQGonJLIUW8m2Xg2iCA==",
-  "success": true,
+  "dgSpecHash": "cGSKLswKoqot5R9+Le2IKHHDYl/YdzQek/vuzyv9vLIPUYV+3KBoyrlTbIMQjT+ad103oOFWdeEvdfFQSlu1rw==",
+  "success": false,
   "projectFilePath": "C:\\Users\\Joshua\\AmerenDev\\ToptalNgDotNet-bitly\\Seed.API\\SeedAPI.Web.API\\SeedAPI.Web.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Joshua\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.6\\microsoft.aspnet.webapi.client.5.2.6.nupkg.sha512",
@@ -282,5 +282,15 @@
     "C:\\Users\\Joshua\\.nuget\\packages\\system.xml.xpath\\4.3.0\\system.xml.xpath.4.3.0.nupkg.sha512",
     "C:\\Users\\Joshua\\.nuget\\packages\\system.xml.xpath.xdocument\\4.3.0\\system.xml.xpath.xdocument.4.3.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "Project SeedAPI.Maps is not compatible with netcoreapp2.1 (.NETCoreApp,Version=v2.1). Project SeedAPI.Maps supports: netcoreapp3.1 (.NETCoreApp,Version=v3.1)",
+      "libraryId": "SeedAPI.Maps",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.1"
+      ]
+    }
+  ]
 }

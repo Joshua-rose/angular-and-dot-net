@@ -4,4 +4,9 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\SeedAPI.Interfaces\SeedAPI.Interfaces.csproj" />
+    <ProjectReference Include="..\SeedAPI.Models\SeedAPI.Models.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -1,6 +1,11 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.IdentityModel.Tokens;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 
 namespace SeedAPI.Web.API.App_Start
@@ -14,16 +19,16 @@ namespace SeedAPI.Web.API.App_Start
                 options.TokenValidationParameters = new TokenValidationParameters
                 {
                     ValidateIssuer = true,
-                    ValidateAudance = true,
+                    ValidateAudience = true,
                     ValidateLifetime = true,
-                    ValidateIssuesSigningKey = true,
+                    ValidateIssuerSigningKey = true,
                     ValidIssuer = configuration["Jwt:Issuer"],
-                    ValidIAudience = configuration["Jwt:Issuer"],
-                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(configuration["Jwt:Key"]))
+                    ValidAudience = configuration["Jwt:Issuer"],
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(configuration["Jwt:Key"])),
 
-                }
+                };
                 services.AddCors();
-            })
+            });
         }
     }
 }

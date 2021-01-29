@@ -16,7 +16,7 @@ namespace SeedAPI.Web.API
         public void ConfigureServices(IServiceCollection services)
         {
             DependencyInjectionConfig.AddScope(services);
-            JwtTokenCOnfig.AddAuthentication(services, Configuration);
+            JwtTokenConfig.AddAuthentication(services, Configuration);
             DBCOntextConfig.Initialize(services, Configuration);
             services.AddMvc();
         }
@@ -38,4 +38,5 @@ namespace SeedAPI.Web.API
             app.UseAuthentication();
             app.UseMvc();
         }
+    }
 }
